@@ -1,0 +1,45 @@
+Algoritmo 
+1. Inicio 
+2. Se pide el costo mensual por litro
+3. Se pide la cantidad de litros consumidos 
+4. Se pide el numero de minutos consumidos 
+5. Se pide el costo de cada minuto 
+6. Se pide la edad 
+7. Se multiplica el costo mensual de litros por la cantidad de litros consumidos 
+8. Se multiplica el costo de minutos por la cantidad de minutos consumidos 
+9. Si la persona es <20 , la cantidad total mensual a pagar de la suma entre agua y telefono se multiplica por 0.20. 
+10. En caso de NO ser <20 se presenta el total a pagar inicial 
+
+Miniespecificacion 
+1. Inicio 
+2. num_litros, d[0- n]
+3. precio_litro, d[0- n]
+4. num_minutos, d[0- n]
+5. precio_minuto, d[0- n]
+6. descuento, d[0- 100]
+7. total_agua, d[0- n]
+8. total_telefono, d[0- n]
+9. total_mensual, d[0- n]
+10. edad, i[0- n]
+11. Escribir "Ingrese el número de litros de agua consumidos en el mes"
+12. Leer num_litros
+13. Escribir "Ingrese el costo de cada litro de agua"
+14. Leer precio_litro
+15. Escribir "Ingrese el número de minutos de teléfono gastados en el mes"
+16. Leer num_minutos
+17. Escribir "Ingrese el costo de cada minuto de teléfono"
+18. Leer precio_minuto
+19. Escribir "Ingrese la edad de la persona"
+20. Leer edad
+21. total_agua<-- num_litros * precio_litro
+22. total_telefono<-- num_minutos * precio_minuto
+23. total_mensual<-- total_agua + total_telefono
+24. Si  edad <20 entonces
+25.     descuento <-- total_mensual * 0.20
+26.     total_mensual<-- total_mensual - descuento
+27.     Escribir "Su valor total mensual con descuento a pagar es de:     
+                  "+total_mensual
+28. De lo contrario
+29.     Escribir "Su valor total mensual es de "+total_mensual
+30. Fin si 
+31. Fin

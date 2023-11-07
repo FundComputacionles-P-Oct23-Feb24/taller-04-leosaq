@@ -1,0 +1,16 @@
+1. Inicio 
+2. g_centigrados, d[0- n]
+3. g_farenheit, d[0- n]
+4. g_kelvin, d[0- n]
+5. Escribir "Ingrese la temperatura en grados centı́grados"
+6. Leer g_centigrados
+7.Si  g_centigrados >=0 and g_centigrados <=100 entonces 
+8.    g_farenheit<-- (9 / 5) * (g_centigrados) + 32
+9.    g_kelvin<-- g_centigrados + 273.15
+10.   Escribir "La temperatura en grados Farenheit (◦F) es: "+g_farenheit
+11.   Escribir "La temperatura en grados Kelvin (◦K) es: "+g_kelvin
+12.De lo contrario 
+13.   Escribir "La temperatura en Grados Cent́igrados no puede ser convertida debido a que
+                debe ser una cantidad positiva y no mayor a 100"
+14.Fin si
+15. Fin 

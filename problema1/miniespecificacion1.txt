@@ -1,0 +1,21 @@
+1. Inicio
+2. costo_kv_Hora, d[0, n]
+3. kv_consumido, d[0, n]
+4. edad, i[0, n]
+5. descuento, d[0-100]
+6. total, d[0, n]
+7. Escribir "Ingrese el costo de kilovatio/hora"
+8. Leer costo_kv_Hora
+9. Escribir "Ingrese el número de kilovatios consumidos en el mes"
+10. Leer kv_consumido
+11. Escribir "Ingrese su edad"
+12. Leer edad
+13. total <--costo_kv_Hora * kv_consumido
+14 Si edad > 65 entonces
+15.   descuento <--total*0.10
+16.   total<--total - descuento
+17.   Escribir "El valor a pagar con descuento es "+total
+19. De lo contrario 
+20.   Escribir "El valor a pagar es " +total
+21.  Fin si
+22.Fin 
