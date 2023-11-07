@@ -2,23 +2,29 @@
 2. dias_hospedaje, i[0- n]
 3. precio_habitacion, d[0- n]
 4. subtotal, d[0- n]
-5. descuento, d[0- n]
+5. descuento, d[0- n]  descuento <-- 0
 6. total, d[0- n]
 7. Escribir "Ingrese cuantos dias se va a hospedar"
 8. Leer dias_hospedaje
 9. Escribir "Ingrese el precio diario de la habitacion"
 10. Leer precio_habitacion
 11. subtotal <-- dias_hospedaje * precio_habitacion
-12. Si dias_hospedaje >5 entonces
+12. Si dias_hospedaje >5 and dias_hospedaje <=10 entonces
 13.    decuento<-- precio_habitacion * 0.10
-14. De lo contrario 
-15. Si dias_hospedaje >10 entonces
-16.    descuento<--precio_habitacion * 0.15
-17. De lo contrario
-19. Si dias_hospedaje >15 entonces
-18.    descuento<--precio_habitacion * 0.20
-19. Fin si 
-20. Fin si 
+14.    total <-- subtotal - descuento
+15.    Escribir "Su total a pagar es "+total
+14.      De lo contrario 
+15.          Si dias_hospedaje >10 and dias_hospedaje <=15 entonces
+16.              descuento<--precio_habitacion * 0.15
+17.              total <-- subtotal - descuento
+18.              Escribir "Su total a pagar es "+total
+17.          De lo contrario
+19.             Si dias_hospedaje >15 entonces
+18.                descuento<--precio_habitacion * 0.20
+19.                total <-- subtotal - descuento
+20.                Escribir "Su total a pagar es "+total
+19.          Fin si 
+20.    Fin si 
 21. Fin si 
 22. total<-- subtotal-descuento 
 23. Escribir "Subtotal por pagar es: "+subtotal
